@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../components/header';
+import Movie from '../components/movie';
 
 export default function Home() {
   return (
@@ -13,27 +14,15 @@ export default function Home() {
       h-screen
     ">
       <Head>
-        <title>Create Next App</title>
+        <title>Studio KaLaHa: movie reviews</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
       <div className="px-4">
-      <div
-        className="
-          flex
-          justify-center
-          items-center
-          bg-white
-          mx-auto
-          max-w-2xl
-          rounded-lg
-          my-16
-          p-16
-        "
-      >
-        <h1 className="text-2xl font-medium">Hier komen onze films!</h1>
-      </div>
+        <Movie movie_id={354912} />
+        <Movie movie_id={629} />
+        <Movie movie_id={424} />
     </div>
-    </div>
+    </div>  
   )
 }
